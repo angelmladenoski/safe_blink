@@ -27,6 +27,80 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
+    <!-- HEADER -->
+    <header>
+      <div class="wrapper">
+        <div class="logoAndNav">
+          <a href="#home">
+            <img src="./assets/images/logo_color.png" alt="logo image" />
+          </a>
+
+          <!-- navbar -->
+          <nav>
+            <ul id="navMenu">
+              <li><a href="#information" id="information">Информирај се</a></li>
+              <li><a href="#discussion" id="discussion">Дискусии</a></li>
+              <li><a href="#contact" id="contact">Контакт</a></li>
+              <li class="hidden" id="profileNavLink">
+                <a href="#profile">Профил</a>
+              </li>
+              <!-- mobile buttons -->
+              <li id="mobileLogButtons">
+                <a href="#login" id="loginBtnMobile">
+                  <button class="headerBtn">
+                    <img
+                      src="./assets/svg_icons/profile_icon.svg"
+                      alt="profile svg" />
+                    <span>Најави се</span>
+                  </button>
+                </a>
+                <button
+                  id="logoutBtnMobile"
+                  class="headerBtn hidden logoutButtons">
+                  <span>Одјави се</span>
+                </button>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- hamburger icon -->
+          <span class="hamburger-icon" id="hamburger">
+            <i class="fas fa-bars"></i>
+          </span>
+        </div>
+
+        <div class="actions">
+          <a href="#profile">
+            <img
+              alt="profile-img"
+              class="profile-img-header hidden"
+              id="navProfileImg" />
+          </a>
+          <!-- login button for pc -->
+          <a href="#login" id="loginBtn">
+            <button class="headerBtn">
+              <img
+                src="./assets/svg_icons/profile_icon.svg"
+                alt="profile-svg" />
+              <span>Најави се</span>
+            </button>
+          </a>
+          <!-- logout button for pc -->
+          <button id="logoutBtn" class="headerBtn hidden logoutButtons">
+            <span>Одјава</span>
+          </button>
+          <img
+            src="./assets/svg_icons/mk-al_icon.svg"
+            alt="language-icon"
+            class="languages-icon" />
+          <img
+            src="./assets/svg_icons/search_icon.svg"
+            alt="search-icon"
+            class="search-icon" />
+        </div>
+      </div>
+    </header>
+
     <script src="./js/main.js" type="module"></script>
   </body>
 </html>
