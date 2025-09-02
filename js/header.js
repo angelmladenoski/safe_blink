@@ -35,28 +35,3 @@ export function activeNavLink() {
     link.classList.toggle("active-nav-link", link.id === hash);
   });
 }
-
-// handle display when user is logged
-export function handleLoggedDisplay() {
-  const isLoggedIn = isUserAuthenticated();
-
-  const user = JSON.parse(localStorage.getItem(SESSION_KEY.AUTHENTICATED_USER));
-
-  if (isLoggedIn) {
-    profileNavLink.classList.remove("hidden");
-    navProfileImg.classList.remove("hidden");
-    loginBtn.classList.add("hidden");
-    loginBtnMobile.classList.add("hidden");
-    logoutBtn.classList.remove("hidden");
-    logoutBtnMobile.classList.remove("hidden");
-
-    navProfileImg.src = `../assets/profile_images/profile_img_${user.img}.png`;
-  } else {
-    profileNavLink.classList.add("hidden");
-    navProfileImg.classList.add("hidden");
-    loginBtn.classList.remove("hidden");
-    logoutBtn.classList.add("hidden");
-    loginBtnMobile.classList.remove("hidden");
-    logoutBtnMobile.classList.add("hidden");
-  }
-}
