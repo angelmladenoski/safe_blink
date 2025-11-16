@@ -31,11 +31,11 @@
     <header>
       <div class="wrapper">
         <div class="logoAndNav">
-          <a href="#home">
-            <img src="./assets/images/logo_color.png" alt="logo image" />
-          </a>
+          <a href="#home"
+            ><img src="./assets/images/logo_color.png" alt="logo_img"
+          /></a>
 
-          <!-- navbar -->
+          <!-- nav -->
           <nav>
             <ul id="navMenu">
               <li><a href="#information" id="information">Информирај се</a></li>
@@ -44,31 +44,29 @@
               <li class="hidden" id="profileNavLink">
                 <a href="#profile">Профил</a>
               </li>
-              <!-- mobile buttons -->
               <li id="mobileLogButtons">
-                <a href="#login" id="loginBtnMobile">
-                  <button class="headerBtn">
+                <a href="#login" id="loginBtnMobile"
+                  ><button class="headerBtn">
                     <img
                       src="./assets/svg_icons/profile_icon.svg"
-                      alt="profile svg" />
+                      alt="profile-svg" />
                     <span>Најави се</span>
-                  </button>
-                </a>
+                  </button></a
+                >
                 <button
                   id="logoutBtnMobile"
                   class="headerBtn hidden logoutButtons">
-                  <span>Одјави се</span>
+                  <span>Одјава</span>
                 </button>
               </li>
             </ul>
           </nav>
 
           <!-- hamburger icon -->
-          <span class="hamburger-icon" id="hamburger">
-            <i class="fas fa-bars"></i>
-          </span>
+          <span class="hamburger-icon" id="hamburger"
+            ><i class="fas fa-bars"></i
+          ></span>
         </div>
-
         <div class="actions">
           <a href="#profile">
             <img
@@ -76,16 +74,14 @@
               class="profile-img-header hidden"
               id="navProfileImg" />
           </a>
-          <!-- login button for pc -->
-          <a href="#login" id="loginBtn">
-            <button class="headerBtn">
+          <a href="#login" id="loginBtn"
+            ><button class="headerBtn">
               <img
                 src="./assets/svg_icons/profile_icon.svg"
                 alt="profile-svg" />
               <span>Најави се</span>
-            </button>
-          </a>
-          <!-- logout button for pc -->
+            </button></a
+          >
           <button id="logoutBtn" class="headerBtn hidden logoutButtons">
             <span>Одјава</span>
           </button>
@@ -110,7 +106,7 @@
           <iframe
             id="home-video"
             width="100%"
-            src="https://www.youtube.com/embed/-niUBSx3PKQ?si=JyfCaNueKt5IpWk7"
+            src="https://www.youtube.com/embed/u31qwQUeGuM?autoplay=1&enablejsapi=1&mute=1"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -929,6 +925,12 @@
       </div>
     </footer>
 
+    <!-- LOTTIE SCRIPT -->
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+      type="module"></script>
+
+    <!-- SCRIPT -->
     <script src="./js/main.js" type="module"></script>
   </body>
 </html>
