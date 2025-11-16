@@ -1,6 +1,7 @@
-import { supportedPaths } from "./router.js";
+// imports
+import { supportedPaths } from "./data.js";
 
-// handle routing
+// Handle routing
 export function handleRouting() {
   const hash = window.location.hash.substring(1) || "home";
   const allPages = document.querySelectorAll("section");
