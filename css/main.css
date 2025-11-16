@@ -1,1 +1,205 @@
-/*# sourceMappingURL=main.css.map */
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin-top: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+span {
+  font-family: "Montserrat", sans-serif;
+}
+
+header .wrapper {
+  width: 90%;
+  margin-inline: auto;
+}
+
+header {
+  background: radial-gradient(circle at left top, rgb(255, 255, 255), rgba(255, 255, 255, 0)), linear-gradient(180deg, rgba(131, 234, 177, 0.7) 0%, rgba(75, 124, 243, 0.7) 100%);
+  padding-block: 1.25rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 800;
+}
+header .wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  flex-wrap: nowrap;
+}
+header .logoAndNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 5rem;
+  flex-wrap: nowrap;
+  flex-basis: 60%;
+}
+@media (max-width: 768px) {
+  header .logoAndNav {
+    justify-content: space-between;
+    flex-basis: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  header .logoAndNav {
+    gap: 1.5rem;
+  }
+}
+header .logoAndNav img {
+  display: block;
+}
+header .logoAndNav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  header .logoAndNav ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, rgba(131, 234, 177, 0.7) 0%, rgba(75, 124, 243, 0.7) 100%);
+    padding: 1.5rem 0;
+    width: 100%;
+    z-index: 1000;
+  }
+}
+header .logoAndNav ul li {
+  font-weight: 700;
+  font-size: 1.375rem;
+  transition: color 0.3s ease-in-out;
+}
+@media (max-width: 768px) {
+  header .logoAndNav ul li {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+  }
+}
+@media (max-width: 1024px) {
+  header .logoAndNav ul li {
+    font-size: 1rem;
+  }
+}
+header .logoAndNav ul li:hover {
+  color: #fff;
+}
+@media (max-width: 768px) {
+  header .logoAndNav ul {
+    display: none;
+  }
+}
+header .logoAndNav .hamburger-icon {
+  display: none;
+  font-size: 35px;
+}
+@media (max-width: 768px) {
+  header .logoAndNav .hamburger-icon {
+    display: block;
+  }
+}
+header .headerBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: nowrap;
+  background-color: transparent;
+  color: #42356b;
+  border: 2px solid #42356b;
+  border-radius: 10px;
+  padding: 0.25rem 0.5rem;
+  font-size: 1.125rem;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  header .headerBtn {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+header .headerBtn img {
+  width: 18px;
+}
+header #mobileLogButtons {
+  display: none;
+}
+@media (max-width: 768px) {
+  header #mobileLogButtons {
+    display: block;
+  }
+}
+header .actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  flex-basis: 40%;
+}
+@media (max-width: 768px) {
+  header .actions {
+    display: none;
+  }
+}
+header .actions .languages-icon {
+  width: 70px;
+}
+header .actions .profile-img-header {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 2px solid #42356b;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=main.css.map */
